@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtA, txtB, txtC, txtKq;
-    Button btnGiai;
+    Button btnGiai, btnThoat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         txtC = findViewById(R.id.txtC);
         txtKq = findViewById(R.id.txtKq);
         btnGiai = findViewById(R.id.btnGiai);
+        btnThoat = findViewById(R.id.btnThoat);
     }
 
     private void addEvents() {
@@ -61,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
                         txtKq.setText("x1 = "+Double.toString(Double.parseDouble(df.format(x1))) + "\n x2 = "+Double.toString(Double.parseDouble(df.format(x2))));
                     }
                 }
+            }
+        });
+
+        btnThoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Goodbye: Duy nhé!",Toast.LENGTH_SHORT).show();
             }
         });
     }

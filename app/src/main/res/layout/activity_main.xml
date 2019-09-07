@@ -59,4 +59,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Giải" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thoát" />
 </LinearLayout>
