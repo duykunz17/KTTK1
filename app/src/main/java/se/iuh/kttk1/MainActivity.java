@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         btnThoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Goodbye: Duy nhé!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Goodbye: Duy nhé! See you again",Toast.LENGTH_SHORT).show();
             }
         });
     }
